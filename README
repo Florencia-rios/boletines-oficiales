@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+
+export PALM_API_KEY=AIzaSyCUALf2QcqEgZKBks3yEaJt3ZFA24dPAsE
+
+python3 NERv3.py

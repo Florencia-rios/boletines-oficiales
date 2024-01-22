@@ -1,0 +1,84 @@
+[
+  {
+    "text": "cumplimiento de los requisitos legales y fiscales e inscripción en el Registro Público",
+    "spans": [
+      {
+        "text": "fiscales",
+        "is_entity": false,
+        "label": "==NONE==",
+        "reason": "is an adjective meaning a type of requirement, not a noun meaning an PPA"
+      }
+    ]
+  },
+  {
+    "text": "Se resuelve autorizar a los Dres. Esteban LAGUINGE, Luis RODRIGUEZ DE LA PUENTE y/o Javier AVALOS para que actuando conjunta o indistintemente realicen todos los trámites para lograr la conformidad administrativa.",
+    "spans": [
+      {
+        "text": "Dres",
+        "is_entity": false,
+        "label": "==NONE==",
+        "reason": "is a an abbreviation for an honorific title, not an PPA"
+       },
+       {
+        "text": "Esteban LAGUINGE",
+        "is_entity": true,
+        "label": "PERSON",
+        "reason": "is a full name with a first name and a family name WRITTEN IN CAPITAL LETTERS"
+        },
+        {
+        "text": "Luis RODRIGUEZ DE LA PUENTE",
+        "is_entity": true,
+        "label": "PERSON",
+        "reason": "is a full name with a first name and a family name WRITTEN IN CAPITAL LETTERS"
+        },
+        {
+        "text": "Javier AVALOS",
+        "is_entity": true,
+        "label": "PERSON",
+        "reason": "is a full name with a first name and a family name WRITTEN IN CAPITAL LETTERS"
+        },
+        {
+        "text": "adquirir, gravar y enajenar inmuebles, constituir, transferir derechos reales, operar con bancos oficiales y privados y demás instituciones de crédito y otorgar poderes para actuar judicial o extrajudicialmente a una o más personas",
+        "is_entity": true,
+        "label": "AUTHORIZATION",
+        "reason": "is a type of PERMIT granted by legal authorization"
+        }
+    ]
+  },
+  {
+    "text": "PRESIDENTE: se designa en tal corgo a la señora Juliana MAZZINL",
+    "spans": [
+      {
+        "text": "Juliana MAZZINL",
+        "is_entity": true,
+        "label": "PERSON",
+        "reason": "is a full name with a first name and a family name WRITTEN IN CAPITAL LETTERS, preceded by treatment title 'señora'"
+      },
+      {
+        "text": "PRESIDENTE",
+        "is_entity": true,
+        "label": "PPA",
+        "reason": "is a role occupied by individuals inside an organization, WRITTEN IN CAPITAL LETTERS"
+      }
+    ]
+  },
+  {
+    "text": "El capital social suscripto es de CIEN MIL.PESOS ($ 100.000), dividido en 1.000 acciones ordinarias, nominativas no endosables de $ 100 valor nominal",
+    "spans": [
+      {
+        "text": "CIEN MIL.PESOS ($ 100.000)",
+        "is_entity": true,
+        "label": "CAPITAL",
+        "reason": "is the initial money with which the company is founded. WRITTEN IN CAPITAL LETTERS, preceded by 'capital social''"
+      },
+      {
+        "text": "$ 100 valor nominal",
+        "is_entity": false,
+        "label": "==NONE==",
+        "reason": "is the value of the stock, not a CAPITAL"
+       }
+    ]
+  }
+]
+
+

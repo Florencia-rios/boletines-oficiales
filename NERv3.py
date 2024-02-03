@@ -58,36 +58,20 @@ def extract_ner(input, index):
         print(sent)
         doc = nlp(sent.replace('-', ' '))
         for ent in doc.ents:
-
-            ###############PERSONAS DEBEN TENER PRIMER NOMBRE VALIDADO##################
-            if ent.label_ == "PERSON":
-                if not validate_name(unidecode(ent.text.split()[0].lower())) or ' ' not in ent.text:
-                    continue
-                if is_word_number(ent.text.lower()):
-                    continue
-            #############################################################################
-
-            #####ORGANIZATION NO CONTIENE NUMEROS####################################
-            if ent.label_ == "ORGANIZATION":
-                if re.search(r'\d', ent.text):
-                    continue
-            ##########################################################################
-
-            #####NUMBER NO CONTIENE NUMEROS####################################
-            if ent.label_ == "DATE":
+           
+            if ent.label_ == "NOMBRE":
                 if re.search(r'^\d', ent.text):
                     continue
-            ##########################################################################
-
-            #####CAPITAL NO CONTIENE NUMEROS####################################
-            if ent.label_ == "CAPITAL":
+            
+            if ent.label_ == "CUIT":
                 if re.search(r'^\d', ent.text):
                     continue
-                   
-            ##########################################################################
-
-            #####LOCATION NO CONTIENE NUMEROS####################################
-            if ent.label_ == "LOCATION":
+                
+            if ent.label_ == "CALLE":
+                if re.search(r'^\d', ent.text):
+                    continue
+                
+            if ent.label_ == "NUMERO":
                 if re.search(r'^\d', ent.text):
                     continue
                    
